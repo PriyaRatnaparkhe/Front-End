@@ -1,0 +1,22 @@
+<br>
+<h3>Assignment3</h3>
+<h4>List of users</h4>
+<app-child (messageFromChild)="recieveMessage($event)"></app-child>
+<div *ngIf="demoData?.length>0">
+<table style="width:75%">
+<thead>
+<tr>
+<th>Id</th>
+<th>Name</th>
+<th>Date of birth</th>
+</tr>
+</thead>
+<tbody>
+<tr *ngFor="let data of demoData;">
+<td>{{data.id}}</td>
+<td>{{data.name}}</td>
+<td>{{data.birthDate}}</td>
+</tr>
+</tbody>
+</table>
+</div>
