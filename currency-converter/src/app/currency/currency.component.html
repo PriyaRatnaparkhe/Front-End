@@ -1,0 +1,18 @@
+<h1> Currency Converter</h1>
+Enter a value <br>
+<input type="text" [(ngModel)]="inputValue"> <br><br>
+
+<select id="from" [(ngModel)]="fromGroup">
+<option value=1>INR</option>
+<option value=2>USD</option>
+<option value=3>EUR</option>
+</select>
+&nbsp;&nbsp;&nbsp;
+<select id="to" [(ngModel)]="toGroup">
+     <option value=4>INR</option>
+    <option value=5>USD</option>
+    <option value=6>EUR</option>
+</select>
+<br><br>
+<button (click)="clickEve()">Convert Currency</button><br><br>
+<div [hidden]="isHidden" [innerHTML]="outputDivision"></div>
