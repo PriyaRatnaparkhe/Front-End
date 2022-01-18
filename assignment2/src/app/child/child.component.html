@@ -1,0 +1,25 @@
+<br>
+<h3>Assignment2</h3>
+<h4>List of users</h4>
+<br>
+<div *ngIf="demodata?.length>0">
+<table>
+<thead>
+<tr>
+<th>Id</th>
+<th>title</th>
+<th>Body</th>
+</tr>
+</thead>
+<tbody>
+<tr *ngFor="let data of demodata;">
+<td>{{data.id}}</td>
+<td>{{data.title}}</td>
+<td>{{data.body}}</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+
